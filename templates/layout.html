@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-	<title>{{ title }}</title>
-	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+	<title>FarmaVise</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
 
 	<!-- for-mobile-apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -158,7 +158,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00;">
 		<div class="container">
 			<a class="navbar-brand" href="{{ url_for('home') }}">
-				<img src="{{ url_for('static', filename='images/logo.jpg') }}" style="width: 90px; height: 55px" alt="">
+				<img src="{{ url_for('static', filename='images/logo2.jpg') }}"
+					style="width: 70px; height: 70px; border-radius: 50%" alt="">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -191,35 +192,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	{% block body %} {% endblock %}
 
 	<!-- footer -->
-	<footer class="text-center py-5">
+	<!-- <footer class="text-center py-5">
 		<div class="container py-md-3">
-			<!-- logo -->
 			<h2 class="logo2 text-center">
 				<a href="{{ url_for('home') }}">
-					Harvestify
+					FarmaVise
 				</a>
 			</h2>
-			<!-- //logo -->
-			<!-- address -->
+			
 			<div class="contact-left-footer mt-4">
 
-
-
-
-
-				<!-- <a href="community.html">Community</a> -->
 				</p>
 			</div>
 			<div class="w3l-copy text-center">
-				<p class="text-da">An Environmental Intelligence Startup<br> </p>
+				<p class="text-da">A Final Year Project<br> </p>
 			</div>
 			<p class="homelogo">
-			<p>Made with ❤️ by Atharva</p>
-			<p>&copy; Copyright 2022 Atharva Ingle</p>
+			<p>&copy; Copyright 2024</p>
 			
 		</div>
-	</footer>
+	</footer> -->
 	<!-- //footer -->
+	<footer>
+		<div class="footer-left">
+			<h1>FarmaVise</h1>
+			<div>
+				<a href="{{ url_for('home') }}">
+					<img src="../static/images/logo2.jpg" alt="FarmaVise Logo">
+				</a>
+			</div>
+		</div>
+		<div class="footer-right">
+			<h2>Members</h2>
+			<div class="member-columns">
+				<ul class="column">
+					<li>Himani Khandelwal</li>
+					<li>Priti Ghuge</li>
+					<li>Kartik Kitukale</li>
+				</ul>
+				<ul class="column">
+					<li>Yash Dekate</li>
+					<li>Dishant Patil</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-center">
+			<p>Copyright &copy; 2024</p>
+		</div>
+	</footer>
+
+
+
+
 
 	<!-- move top icon -->
 	<a href="#home" class="move-top text-center"></a>
